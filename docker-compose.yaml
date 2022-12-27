@@ -3,7 +3,7 @@ services:
   axigen:
     image: vocon/kasmweb-desktop
     environment:
-      - VNC_PW=password
+      - VNC_PW= "password"
     ports:
       - 6901:6901
       - 443:443
