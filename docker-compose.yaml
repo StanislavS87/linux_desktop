@@ -1,0 +1,12 @@
+version: '3'
+services:
+  axigen:
+    image: kasmweb/desktop
+    environment:
+      - VNC_PW=password
+    ports:
+      - 6901:6901
+      - 7000:7000
+      - 21:21
+      - 80:80
+      - 143:143
