@@ -1,7 +1,7 @@
 version: '3'
 services:
   axigen:
-    image: vocon/kasmweb-desktop
+    image: kasmweb/desktop:1.10.0-rolling
     environment:
       - VNC_PW= "password"
     ports:
@@ -9,4 +9,4 @@ services:
       - 443:443
       - 21:21
       - 80:80
-      - 143:143
+      - 5901:5901
