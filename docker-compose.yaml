@@ -1,12 +1,12 @@
 version: '3'
 services:
   axigen:
-    image: kasmweb/desktop:1.12.0
+    image: kasmweb/core-ubuntu-bionic:1.12.0
     environment:
       - VNC_PW=password
     ports:
       - 6901:6901
-      - 7000:7000
+      - 443:443
       - 21:21
       - 80:80
       - 143:143
