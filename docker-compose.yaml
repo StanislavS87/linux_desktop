@@ -1,12 +1,13 @@
 version: '3'
 services:
-  axigen:
-    image: kasmweb/desktop:1.10.0-rolling
+  linux:
+    image: dorowu/ubuntu-desktop-lxde-vnc
     environment:
-      - VNC_PW= "password"
+      - VNC_PW=password
+      - HTTP_PASSWORD=mypassword
     ports:
       - 6901:6901
       - 443:443
       - 21:21
-      - 80:80
+      - 6080:80
       - 5901:5901
